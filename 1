@@ -8,7 +8,13 @@ import javafx.scene.control.Alert.AlertType;
 public class groupSizeApplication extends Application
 {
 
-	public void start(Stage primaryStage)
+	public static void main(String[] args) 
+	{
+		launch(args);
+	}
+
+	@Override
+	public void start(Stage primaryStage) throws Exception
 	{
 		TextInputDialog inputdialog = new TextInputDialog();
 		inputdialog.setTitle("Group Size Application");
